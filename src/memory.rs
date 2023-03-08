@@ -5,7 +5,6 @@ use x86_64::{ PhysAddr, structures::paging::{Page, PhysFrame, Mapper, Size4KiB, 
 use bootloader::bootinfo::MemoryMap;
 use bootloader::bootinfo::MemoryRegionType;
 
-
 pub struct EmptyFrameAllocator;
 
 pub struct BootInfoFrameAllocator {
