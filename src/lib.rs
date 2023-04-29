@@ -9,6 +9,7 @@
 #![feature(type_alias_impl_trait)]
 #![feature(asm)]
 #![feature(core_intrinsics)]
+#![feature(pointer_byte_offsets)]
 
 extern crate core;
 extern crate alloc;
@@ -21,6 +22,10 @@ pub mod serial;
 pub mod memory;
 pub mod allocator;
 pub mod task;
+pub mod kernel;
+pub mod apps;
+pub mod disk;
+pub mod fat;
 
 pub fn init() {
     gdt::init();
